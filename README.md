@@ -17,13 +17,13 @@ using the `ollama pull <model_id>` command. For more information we refer to the
 
 ## How to use
 ReqH can be executed launching [main.py](main.py) and requires four command line parameters:
-- --input_path: Path to the Plain Text file containing the requirements in natural language to translate in PSP. 
+- `--input_path`: Path to the Plain Text file containing the requirements in natural language to translate in PSP. 
 It should contain one requirement for each row. An example can be found in [input.txt](inputs/input.txt).
-- --output_path: Path to the Plain Text file that will contain the requirements translated in PSP.
+- `--output_path`: Path to the Plain Text file that will contain the requirements translated in PSP.
 It will contain one requirement for each row. An example can be found in [output.txt](outputs/output.txt).
-- --context_path: Path to the Plain Text file containing the context to provide to the LLM model.
+- `--context_path`: Path to the Plain Text file containing the context to provide to the LLM model.
 An example can be found in [context.txt](inputs/context.txt).
-- --config_path: Path to the .ini file containing the configuration info for the script.
+- `--config_path`: Path to the .ini file containing the configuration info for the script.
 An example can be found in [default_config.ini](configs/default_config.ini).
 
 ## Important Notes
