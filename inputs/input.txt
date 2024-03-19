@@ -1,0 +1,3 @@
+IF Class EQUAL 3 AND IF default view THEN vertical vision distance MUST be EQUAL or GREATER THAN 20 m behind driver/passenger.
+IF Pass EQUAL 6 AND IF super view THEN orizontal vision distance MUST be EQUAL or LESS THAN 20 m behind driver/passenger.
+IF Mass EQUAL 3 AND IF default view THEN vertical vision distance MUST be GREATER THAN 50 m behind driver/passenger.
