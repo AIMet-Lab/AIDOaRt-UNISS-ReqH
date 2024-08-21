@@ -1,0 +1,41 @@
+﻿PSP,NL
+"Globally, it is always the case that if class = 1 and default_view holds, then vertical_vision_distance >= 60 holds as well.",IF Class EQUAL 1 AND IF default view THEN vertical vision distance MUST be EQUAL or GREATER THAN 60 m behind driver
+"Globally, it is always the case that if class = 1 and default_view and vertical_longitudinal_median_plane >= 60 holds, then horizontal_vision >= 20 eventually holds.",IF Class EQUAL 1 AND IF default view AND vertical longitudinal median plane EQUAL or GREATER 60 m THEN  horizontal vision MUST be EQUAL or GREATER THAN 20 m 
+"Globally, it is always the case that if class = 3 and default_view holds, then vertical_vision_distance >= 20 holds as well.",IF Class EQUAL 3 AND IF default view THEN vertical vision distance MUST be EQUAL or GREATER THAN 20 m behind driver/passenger
+"Globally, it is always the case that if class = 3 and default_view and vertical_longitudinal_median_plane >= 4 holds, then vertical_vision >= 1 holds as well.",IF Class EQUAL 3 AND IF default view AND vertical longitudinal median plane EQUAL or GREATER  THAN 4 m THEN vertical vision MUST be EQUAL or GREAT THAN 1 m 
+"Globally, it is always the case that if class = 3 and default_view and vertical_longitudinal_median_plane >= 20 holds, then horizontal_vision >= 4 holds as well.",IF Class EQUAL 3 AND IF default view  AND vertical longitudinal median plane EQUAL 20 m THEN horizontal vision MUST be EQUAL or GREAT THAN 4 m 
+"Globally, it is always the case that if class = 1 holds, then AVG_MF = 0.33 holds as well.","IF Class EQUAL 1 THEN Average magnification factor EQUAL to 0,33"
+"Globally, it is always the case that if class = 3 holds, then AVG_MF = 0.31 holds as well.",IF Class EQUAL 3 AND IF driver side THEN average magnification factor EQUAL to 0.31
+"Globally, it is always the case that if class = 3 and passenger_side holds, then AVG_MF = 0.20 holds as well.",IF Class EQUAL 3 AND IF passenger side THEN average magnification factor EQUAL to 0.20
+"Globally, it is always the case that if class = 1 holds, then MIN_MF = 0.31 holds as well.","IF Class EQUAL 1 THEN Minimum magnification factor EQUAL to 0,31"
+"Globally, it is always the case that if class = 3 and driver_side holds, then MIN_MF = 0.29 holds as well.",IF Class EQUAL 3 AND  IF driver side THEN minimum magnification factor EQUAL to 0.29
+"Globally, it is always the case that if class = 3  and passenger_side holds, then MIN_MF = 0.19 holds as well.",IF Class EQUAL 3 AND IF passenger side THEN minimum magnification factor EQUAL to 0.19
+"Globally, it is always the case that if class = 1 and adjust_default_view holds, then vertical_vision_distance < 60 eventually holds.",IF Class EQUAL 1 AND IF adjust default view THEN vertical vision distance CAN be LESS THAN 60 m behind driver
+"Globally, it is always the case that if class = 1 and adjust_default_view holds, then horizontal_vision < 60 eventually holds.",IF Class EQUAL 1 AND IF adjust default view THEN  horizontal vision CAN be LESS THAN 20 m at the vertical longitudinal median plane of 60 m behind driver
+"Globally, it is always the case that if class = 3 and adjust_default_view holds, then vertical_vision_distance < 20 eventually holds.",IF Class EQUAL 3 AND IF adjust default view THEN vertical vision CAN be LESS THAN 20 m behind driver/passenger
+"Globally, it is always the case that if class = 3 and adjust_default_view and vertical_longitudinal_median_plane = 4 holds, then vertical_vision < 1 eventually holds.",IF Class EQUAL 3 AND adjust default view AND vertical longitudinal median plane EQUAL 4 m THEN vertical vision CAN be LESS THAN 1 m 
+"Globally, it is always the case that if class = 3 and adjust_default_view and vertical_longitudinal_median_plane = 20 holds, then horizontal_vision < 4 eventually holds.",IF Class EQUAL 3 AND IF adjust default view  AND vertical longitudinal median plane  EQUAL 20 m THEN horizontal vision CAN be LESS THAN 4 m at the 
+"Globally, it is always the case that display_area >= required_field_vision holds.",Display area MUST be EQUAL or GREATER THAN required field of vision
+"Globally, it is always the case that if light_sources_number =2 and light_sources_intensity = 1750 and inter_light_sources_distance =1.3 and light_sources_distance = 250 holds, then perceived_light_sources_number = 2 holds as well.",Two light sources with an intensity of 1750 cd AND inter light distance of 1.3 m AND distance EQUAL 250 m MUST be distinguishable as two different light sources
+"Globally, it is always the case that if automatic_luminance_constrast_adjustment holds, then auto_dimming holds as well.",IF automatic luminance constrast adjustment is on THEN activate auto-dimming.
+"After direct_sunlight_state, it is always the case that monitor_luminance_ratio >= 100",IF direct sunlight condition THEN monitor luminance contrast ratio MUST be EQUAL or GREATER THAN 2:1
+"After diffuse_light, it is always the case that monitor_luminance_ratio >= 100 holds",IF diffuse ambient day light condition THEN monitor luminance contrast ratio MUST be EQUAL or GREATER THAN 3:1
+"After sunset_ligh_state, it is always the case that monitor_luminance_ratio >= 100 holds",IF sunset light condition THEN monitor luminance contrast ratio MUST be EQUAL or GREATER THAN 2:1
+"After night_light_state, it is always the case that if standard_driver holds, then monitor_luminance_ratio >= 100 holds",IF night light condition AND standard driver THEN monitor luminance contrast ratio MUST be EQUAL or GREATER THAN 5:1
+"After night_light_state, it is always the case that if older_driver holds, then monitor_luminance_ratio >= 100 holds",IF night light condition AND older driver THEN monitor luminance contrast ratio MUST be EQUAL or GREATER THAN 10:1
+"After luminance <= 2.0, it is always the case that night_light_state holds.","IF luminance is EQUAL or LESS THAN 2,0 lx THEN set night light condition"
+"After night_light_state, it is always the case that monitor_background_luminance <= 2.0 holds.","IF night light condition THEN monitor background luminance MUST be EQUAL or LESS THAN 2,0 cd/m2"
+"After temperature <= 0, it is always the case that camera_defrost_system holds.",IF temperature EQUAL or LESS THAN 0°C THEN activate camera defrost system
+"After soiling_camera, it is always the case that NN_clean_processing holds.",IF soiling on the cameras THEN enable digital clean image processing algorithm
+"After night_light_state, it is always the case that HDR holds.",IF night light condition THEN activate HDR
+"After approaching_vehicle_in_blind_spot, it is always the case that send_alert holds.",IF approaching veichle is in blind spot THEN send alert
+"After approaching_vehicle_distance < 40, it is always the case that if approaching_vehicle_velocity < 20 holds, then send_alert holds as well.",IF approaching veichle distance is LESS THAN 40 m AND approaching relative veichle velocity is GREATER THAN 20 km/h THEN send alert
+"After backing_up, it is always the case that blind_spot holds.",IF veichle is backing up THEN activate blind spot 
+"After backing_up, it is always the case that object_detection holds.",IF veichle is backing up THEN activate critical objet detection
+"After turning, it is always the case that blind_spot holds.",IF veichle is turning THEN activate blind spot 
+"After turning, it is always the case that object_detection holds.",IF veichle is turning THEN activate critical object detection
+"After signal_lamp_event, it is always the case that warning_emergency holds.",IF signal-lamp THEN send warning emergency veichle
+"Globally, it is always the case that camera_number = 4 holds.",camera number EQUAL 4 
+"Globally, it is never the case that camera_number < 2 holds.",CMS MUST NOT work with LESS THAN 2 cameras
+"Globally, it is always the case that video_number = 3 holds.",The display SHALL visualize 3 videos
+"After soiling_camera, it is always the case that if NN_clean_image_result < 0 holds, then send_warning eventually holds.",IF soiling on the cameras AND clean processing algorithm is negative THEN send warning to clean camera WITHIN NEXT hour
